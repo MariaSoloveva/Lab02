@@ -4,12 +4,12 @@
 
 int main() {
 // Каждое из чисел X, Y  нечетное
-    std::cout << " X=?,Y=?" << std::endl;
+    std::cout << " X=?, Y=?" << std::endl;
     int x = 0;
     std::cin >> x;
     int y = 0;
     std::cin >> y;
-    if ((fmod(x, 2) !=0) && (fmod(y, 2) !=0)) {
+    if ((x % 2 == 0 ) && (y % 2 == 0)) {
         std::cout << " odd numbers" << std::endl;
     } else {
         std::cout << "The condition is not executed" << std::endl;
