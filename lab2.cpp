@@ -35,18 +35,13 @@ int main() {
         std::cout << "The condition  is not performed" << std::endl;
     }
 // Только одно число кратно 5
-    if ((x % 5 == 0) && (y % 5 != 0) && (z % 5 != 0)) {
+    bool condition1 = (x % 5 == 0) && (y % 5 != 0) && (z % 5 != 0);
+    bool condition2 = (y % 5 == 0) && (x % 5 != 0) && (z % 5 != 0);
+    bool condition3 = (z % 5 == 0) && (y % 5 != 0) && (x % 5 != 0);
+    if (condition1 || condition2 || condition3) {
         std::cout << "only one number is a multiple of 5" << std::endl;
     } else {
-        if (((y % 5 == 0) && (x % 5 != 0) && (z % 5 != 0))) {
-            std::cout << "only one number is a multiple of 5" << std::endl;
-        } else {
-            if ((z % 5 == 0) && (y % 5 != 0) && (x % 5 != 0)) {
-                std::cout << "only one number is a multiple of 5" << std::endl;
-            } else {
-                std::cout << "The condition  is not executed" << std::endl;
-            }
-        }
+        std::cout << "The condition  is not executed" << std::endl;
     }
 // Хотя бы одно из чисел больше 100
     if ((x >= 100) || (y >= 0) || (z >= 100)){
@@ -104,8 +99,8 @@ int main() {
     }
 // На поле (a, b) расположена белая пешка. Записать условие, при котором она может
     // одним ходом попасть на поле (c, d):когда она "бьет" фигуру или пешку соперника.
-    bool condition1 = (p1.first - p2.first == -1) && (p1.second + 1 == p2.second);
-    bool condition2 = (p1.first - p2.first == 1) && (p1.second + 1 == p2.second);
+    condition1 = (p1.first - p2.first == -1) && (p1.second + 1 == p2.second);
+    condition2 = (p1.first - p2.first == 1) && (p1.second + 1 == p2.second);
     if (condition1 || condition2) {
         std::cout << "Danger of the pawn" << std::endl;
     } else {
