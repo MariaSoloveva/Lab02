@@ -89,8 +89,8 @@ int main() {
     } else {
             std::cout << "Out Of Danger" << std::endl;
     }
-// На поле (a, b) расположен ферзь. Записать условие, при котором он угрожает полю (c, d).( ферзь = ладья + слон )
-    if ((k > 0) || (p1.first == p2.first) || (p1.second == p2.second)){  
+// На поле (a, b) расположен ферзь. Записать условие, при котором он угрожает полю (c, d).
+    if ((k > 0) || (p1.first == p2.first) || (p1.second == p2.second)) {
         std::cout << "The threat from the bishop" << std::endl;
     } else {
         std::cout << "There is no threat from the queen" << std::endl;
