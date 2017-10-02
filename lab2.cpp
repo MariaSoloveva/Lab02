@@ -9,7 +9,7 @@ int main() {
     std::cin >> x;
     int y = 0;
     std::cin >> y;
-    if ((x % 2 == 0 ) && (y % 2 == 0)) {
+    if ((x % 2 == 0) && (y % 2 == 0)) {
         std::cout << " odd numbers" << std::endl;
     } else {
         std::cout << "The condition is not executed" << std::endl;
@@ -35,13 +35,13 @@ int main() {
         std::cout << "The condition  is not performed" << std::endl;
     }
 // Только одно число кратно 5
-    if ((fmod(x, 5) == 0) && (fmod(y, 5) != 0) && (fmod(z, 5) != 0)){
+    if ((x % 5 == 0) && (y % 5 != 0) && (z % 5 != 0)) {
         std::cout << "only one number is a multiple of 5" << std::endl;
     } else {
-        if ((fmod(y, 5) == 0) && (fmod(z, 5) != 0) && (fmod(x, 5) != 0)){
+        if (((y % 5 == 0) && (x % 5 != 0) && (z % 5 != 0))) {
             std::cout << "only one number is a multiple of 5" << std::endl;
         } else {
-            if ((fmod(z, 5) == 0) && (fmod(y, 5) != 0) && (fmod(x, 5) != 0)){
+            if ((z % 5 == 0) && (y % 5 != 0) && (x % 5 != 0)) {
                 std::cout << "only one number is a multiple of 5" << std::endl;
             } else {
                 std::cout << "The condition  is not executed" << std::endl;
